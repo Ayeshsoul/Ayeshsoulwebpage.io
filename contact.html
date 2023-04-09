@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayesh-webpage-profile</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            background-color: linen;
+            height: auto;
+        }
+
+        .box4 {
+            margin: 20px 0px;
+            padding: 0px;
+            border-radius: 20px;
+            width: 60vw;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            flex-wrap: wrap;
+            left: 20%;
+            position: relative;
+        }
+
+        .box4 h3 {
+            font-size: 42px;
+            margin: 28px 8px;
+        }
+
+        .icons img {
+            height: 62px;
+            width: 130px;
+            margin: 0px;
+            padding: 0px;
+            filter: invert(100);
+            transition: transform 0.5s;
+        }
+
+        .icons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <li><a href="html/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/interest.html">Interests</a></li>
+                    <li><a href="/contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="open" src="pics/menu.png" alt="" width="30px">
+                <img class="close" src="pics/menu (2).png" alt="" width="40px">
+            </div>
+            <div class="contactform">
+                <h1>Contact me</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="clientemail" class="form-label">Name</label>
+                        <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="clientemail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">I'll never share your email and phone with anyone else.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="clientphone" class="form-label">Phone</label>
+                        <input type="phone" class="form-control" id="clientphone">
+                    </div>
+                    <div class="mb-3" id="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-sm">Submit</button>
+                </form>
+            </div>
+            <div class="box4">
+                <h3>Contact</h3>
+                <div class="icons">
+                    <a href="https://wa.me/7847883940" target="_blank"><img src="pics/square-whatsapp.svg"
+                            alt="7847883940"></a>
+                    <a href="https://www.instagram.com/friendsoul_all/?igshid=ZDdkNTZiNTM%3D" target="_blank"><img
+                            src="pics/square-instagram.svg" alt="ig"></a>
+                    <a href="https://github.com/Ayeshsoul" target="_blank"><img src="pics/square-github.svg"
+                            alt="github"></a>
+                    <a href="https://gmail.com/ayeshmohapatra0616@gmail.com" target="_blank"><img
+                            src="pics/envelope-solid.svg" alt="email"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <scan>&copy; Ayesh Mohapatra</scan>
+        <scan>&copy; Ayesh_soul</scan> &#10084
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

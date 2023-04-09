@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: #f3f3f300;
+}
+
+.container {
+    display: flex;
+    background: linear-gradient(296deg, #c41c1c, transparent);
+    height: 100vh;
+}
+
+.sidebar {
+    position: absolute;
+    background: gainsboro;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+    transition: transform 0.5s;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.sidebar nav li:hover {
+    transform: translateY(-7px);
+}
+
+.sidebar nav li::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: crimson;
+    position: absolute;
+    left: 0;
+    bottom: 28px;
+    transition: 0.5s;
+}
+
+.sidebar nav li:hover::after {
+    width: 100%;
+    color: antiquewhite;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.sidebar nav li a:hover {
+    transform: translateY(-5px);
+}
+
+.main {
+    width: 100vw;
+}
+
+.infocontainer {
+    height: 58vh;
+    width: 75vw;
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 21px;
+}
+
+.hello {
+    font-size: 3em;
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bolder;
+    font-family: cursive;
+    transition: transform 0.5s;
+}
+
+.name:hover {
+    color: snow;
+    transform: translateY(-5px);
+}
+
+.about {
+    font-size: 2.5em;
+}
+
+.moreabout {
+    font-size: 1.7em;
+    margin-top: 20px;
+}
+
+.buttons {
+    margin-top: 2.2em;
+    font-size: 14px;
+}
+
+.btn {
+    padding: 9px 14px;
+    border-radius: 25px;
+    color: whitesmoke;
+    background-color: dodgerblue;
+    font-weight: bolder;
+    font-size: 2em;
+    margin: 3px 11px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.btn-sm {
+    font-size: 14px;
+    padding: 10px 19px;
+    margin: 12px 0;
+}
+
+.btn:hover {
+    background-color: whitesmoke;
+    color: dodgerblue;
+    transform: translateY(-6px);
+}
+
+.pic img {
+    height: 58vh;
+}
+
+.contactform {
+    padding: 80px 15px;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 10px;
+}
+
+.contactform h1 {
+    font-family: 'Source Sans Pro', monospace;
+    /* padding: 17px 0; */
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    /* width: 26vw; */
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+.contactform form {
+    margin: 0 40px;
+}
+
+#emailHelp {
+    font-size: 12px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+.form-check-input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 23px;
+}
+
+p {
+    font-family: 'Source Sans Pro', monospace;
+}
+
+.intro {
+    margin: 88px;
+    font-size: 15px;
+}
+
+.intro h2 {
+    font-size: 4em;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px 12px;
+    color: azure;
+}
+
+.intro p {
+    font-size: 2em;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px 12px;
+    color: beige;
+}
+
+.containerskill {
+    width: 92%;
+    padding: 50px 0;
+    background-color: beige;
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 6;
+}
+
+.containerskill * {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+span {
+    font-size: 25px;
+}
+
+.containerskill h2 {
+    margin-bottom: 4em;
+    letter-spacing: 2px;
+    margin: 10px 88px;
+    color: darkolivegreen;
+}
+
+.skills:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bar {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 7px 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.bar div {
+    position: relative;
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #badefc;
+    border: 1px solid #1c97fc;
+    box-shadow: 0 0 5px rgba(28, 151, 252, 0.6);
+}
+
+#html-bar {
+    animation: html-fill 2s forwards;
+}
+
+@keyframes html-fill {
+    100% {
+        width: 90%;
+    }
+}
+
+#css-bar {
+    animation: css-fill 1.3s forwards;
+}
+
+@keyframes css-fill {
+    100% {
+        width: 80%;
+    }
+}
+
+#js-bar {
+    animation: js-fill 0.8s forwards;
+}
+
+@keyframes js-fill {
+    100% {
+        width: 5%;
+    }
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.open {
+    margin-left: 10px;
+    margin-left: 10px;
+    transition: transform 0.8s;
+}
+
+.open:hover {
+    transform: scale(1.3);
+}
+
+.close {
+    margin-left: 140px;
+    margin-top: 5px;
+    transition: transform 0.8s;
+}
+
+.close:hover {
+    transform: scale(1.3);
+}
+
+@media (max-width: 1650px) {
+    .buttons {
+        font-size: 10px;
+    }
+
+    .info {
+        font-size: 15px;
+    }
+
+    .pic {
+        display: none;
+    }
+
+    .intro .contactform {
+        margin: 50px 8px;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        width: 100%;
+    }
+
+    .pic {
+        display: block;
+        height: 22vh;
+    }
+
+    .pic img {
+        height: 13vh;
+    }
+
+    .intro {
+        margin: 88px 15px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .containerskill {
+        width: 92%;
+        padding: 0;
+    }
+}
+
+footer {
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer scan {
+    font-size: larger;
+}
